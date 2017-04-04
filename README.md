@@ -23,7 +23,11 @@ A growing collection of Wikipedia Articles read by Friend Computer.
 Use for streaming, podcasts, radio, blind/sight impaired reading of wikipedia, mixing, mashing and other unlisted activities. Continued exposure may cause increased knowing. 
 
 ()All articles read by Friend Computer are extracted from the  enwiki-20170320-pages-articles data dump. 
+
 ()Data was extracted using WikiExtractor https://github.com/attardi/wikiextractor 
+
 ()Friend Computer uses Pico2Wave to read the extracted articles.
+
 ()mp3 recordings are moved into the greater Internet Archive library using the InternetArchive Library tools https://internetarchive.readthedocs.io/en/latest/installation.html
+
 ()All of the above is managed by a bash script created for the purpose of aiding Friend Computer's mission of knowledge distribution  https://github.com/tomhiggins/WikipediaRadio
