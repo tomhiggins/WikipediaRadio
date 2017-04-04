@@ -1,12 +1,13 @@
 # WikipediaRadio
 Bash Script to automate the  extraction of Wikipedia data dumps, parsing out the articles, have them read by Friend Computer via PIco2Wave/Lame and move those recordings into Internet Archives library. 
+
 You can listen to the results at https://archive.org/details/WikipediaRadio
 
 While this was made for a particular project I have kept the code as generic as possible so that anyone can use it to automate 
 bulk renderings of text into mp3. The function to upload to the Internet Arachive can be easily disabled if that is not needed. 
 
 
-#Required 
+# Required 
 
 -Lame
 
@@ -17,7 +18,7 @@ bulk renderings of text into mp3. The function to upload to the Internet Arachiv
 -InternetArchive Library Tools - https://internetarchive.readthedocs.io/en/latest/installation.html
 
 
-#What is WikipediaRadio?
+# What is WikipediaRadio?
 A growing collection of Wikipedia Articles read by Friend Computer. 
 
 
