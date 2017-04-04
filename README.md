@@ -6,13 +6,14 @@ bulk renderings of text into mp3. The function to upload to the Internet Arachiv
 
 
 Required 
-Lame
 
-Pico2Wave
+-Lame
 
-WikiExtractor -  https://github.com/attardi/wikiextractor 
+-Pico2Wave
 
-InternetArchive Library Tools - https://internetarchive.readthedocs.io/en/latest/installation.html
+-WikiExtractor -  https://github.com/attardi/wikiextractor 
+
+-InternetArchive Library Tools - https://internetarchive.readthedocs.io/en/latest/installation.html
 
 
 What is WikipediaRadio?
