@@ -7,8 +7,11 @@ bulk renderings of text into mp3. The function to upload to the Internet Arachiv
 
 Required 
 Lame
+
 Pico2Wave
+
 WikiExtractor -  https://github.com/attardi/wikiextractor 
+
 InternetArchive Library Tools - https://internetarchive.readthedocs.io/en/latest/installation.html
 
 
