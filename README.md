@@ -33,3 +33,8 @@ Use for streaming, podcasts, radio, blind/sight impaired reading of wikipedia, m
 ()mp3 recordings are moved into the greater Internet Archive library using the InternetArchive Library tools https://internetarchive.readthedocs.io/en/latest/installation.html
 
 ()All of the above is managed by a bash script created for the purpose of aiding Friend Computer's mission of knowledge distribution  https://github.com/tomhiggins/WikipediaRadio
+
+# To Do
+-Add code for getting and extracting wikipedia data 
+   torrent or wget
+   wikiextractor
