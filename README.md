@@ -35,6 +35,9 @@ Use for streaming, podcasts, radio, blind/sight impaired reading of wikipedia, m
 ()All of the above is managed by a bash script created for the purpose of aiding Friend Computer's mission of knowledge distribution  https://github.com/tomhiggins/WikipediaRadio
 
 # To Do
+-add code to get and install required code
+  sudo apt-get install lame libttspico-utils
+  
 -Add code for getting and extracting wikipedia data 
    torrent or wget
    wikiextractor
