@@ -9,6 +9,9 @@
 #
 
 # Change iaarchive to the Identifier for your particular IA project
+# NB IA can handle about 1000 items per Identifier. After it hits the limit
+# the indivudal fules and the media player interface will not show up on the 
+# web page. Plan accordingly
 iaarchive="WikipediaRadio"
 count=0
 # Change Files to the top directory of text files 
