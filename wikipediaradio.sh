@@ -8,6 +8,8 @@
 #
 #
 
+# Should this code save the mp3s to Archive.org (1= yes 0=no)
+uploadtoia=1
 # Change iaarchive to the Identifier for your particular IA project
 # NB IA can handle about 1000 items per Identifier. After it hits the limit
 # the indivudal fules and the media player interface will not show up on the 
@@ -30,7 +32,10 @@ do
            elif [[ "$line" == "</doc"* ]]
            # If this is the end of the article push the finalized mp3 to IA and clean up 
              then
-             ia upload "$iaarchive" "$mp3keep" --metadata="mediatype:audio"
+             if [["$uploadtoia"]]
+             then
+                  ia upload "$iaarchive" "$mp3keep" --metadata="mediatype:audio"
+             fi     
              mv "$mp3keep" mp3/
              rmdir "$title/"
              else
