@@ -24,23 +24,36 @@ do
         while read -r line
         do
           if [[ "$line" == "<doc"* ]]
-          then
-          # If this is the top of a new article set title to the articles name and set up the line count
+            then
+
+            # If this is the top of a new article set title to the articles name and set up the line count
             title=$(echo "$line"|cut -d "\"" -f 6|sed 's/ //g')
+
+              # If your run was interupted by power outage, cat on keyboard or the like this will try to 
+              # skip over what you have already done. 
+                if  [ -f "mp3/$title"$".mp3" ]
+                  then
+                  break
+                fi
+
             mkdir "$title"
             count=0
            elif [[ "$line" == "</doc"* ]]
+
            # If this is the end of the article push the finalized mp3 to IA and clean up 
              then
-             if [ $uploadtoia == "Yes"]
-             then
+               # If uploadtoia is set to Yes
+               if [ $uploadtoia == "Yes"]
+                 then
                   ia upload "$iaarchive" "$mp3keep" --metadata="mediatype:audio"
-             fi     
+               fi     
+             # Move the final mp3 to the mp3 directory and remove the temp direcotry  
              mv "$mp3keep" mp3/
              rmdir "$title/"
              else
             # If this is a line of text in the article read it and convert it to a temp mp3
             # add the temp mp3 to the master mp3 for this article
+            # clean up the temp files
             # increase the line count
                 count=$((count+1))
                 wavefile="$title/"$"$title"$"."$"$count"$".wav"
